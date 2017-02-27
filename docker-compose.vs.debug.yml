@@ -1,0 +1,32 @@
+version: '2'
+
+services:
+  webapplication1:
+    image: webapplication1:dev
+    build:
+      args:
+        source: ${DOCKER_BUILD_SOURCE}
+    environment:
+      - DOTNET_USE_POLLING_FILE_WATCHER=1
+    volumes:
+      - ./WebApplication1:/app
+      - ${NUGET_PACKAGE_PATH}:/root/.nuget/packages:ro
+      - ${CLRDBG_PATH}:/remote_debugger:ro
+    entrypoint: tail -f /dev/null
+    labels:
+      - "com.microsoft.visualstudio.targetoperatingsystem=linux"
+
+  webapplication2:
+    image: webapplication2:dev
+    build:
+      args:
+        source: ${DOCKER_BUILD_SOURCE}
+    environment:
+      - DOTNET_USE_POLLING_FILE_WATCHER=1
+    volumes:
+      - ./WebApplication2:/app
+      - ${NUGET_PACKAGE_PATH}:/root/.nuget/packages:ro
+      - ${CLRDBG_PATH}:/remote_debugger:ro
+    entrypoint: tail -f /dev/null
+    labels:
+      - "com.microsoft.visualstudio.targetoperatingsystem=linux"
