@@ -10,7 +10,7 @@ services:
       - DOTNET_USE_POLLING_FILE_WATCHER=1
     volumes:
       - ./WebApplication1:/app
-      - ${NUGET_PACKAGE_PATH}:/root/.nuget/packages:ro
+      - ${NUGET_PACKAGES}:/root/.nuget/packages:ro
       - ${CLRDBG_PATH}:/remote_debugger:ro
     entrypoint: tail -f /dev/null
     labels:
@@ -25,7 +25,7 @@ services:
       - DOTNET_USE_POLLING_FILE_WATCHER=1
     volumes:
       - ./WebApplication2:/app
-      - ${NUGET_PACKAGE_PATH}:/root/.nuget/packages:ro
+      - ${NUGET_PACKAGES}:/root/.nuget/packages:ro
       - ${CLRDBG_PATH}:/remote_debugger:ro
     entrypoint: tail -f /dev/null
     labels:
