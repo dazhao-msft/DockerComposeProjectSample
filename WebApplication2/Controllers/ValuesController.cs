@@ -13,7 +13,7 @@ namespace WebApplication2.Controllers
         [HttpGet]
         public IEnumerable<string> Get()
         {
-            return new string[] { "value1", "value2", ClassLibrary1.Class1.GetString() };
+            return new string[] { "value1", "value2", "ClassLibrary1.Class1.GetString()" };
         }
 
         // GET api/values/5
