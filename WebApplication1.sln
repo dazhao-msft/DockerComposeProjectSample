@@ -1,11 +1,10 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26224.1
-MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{071F2233-252E-430A-AA64-A890244C6CDD}"
-EndProject
+Microsoft Visual Studio Solution File, Format Version 15.00
+# Visual Studio 2017
+VisualStudioVersion = 15.0.26228.4
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{850809C2-7FF1-494A-B0B2-BC824B99C54B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{071F2233-252E-430A-AA64-A890244C6CDD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication2", "WebApplication2\WebApplication2.csproj", "{F6800545-1400-41FD-BE01-B2053D7BA362}"
 EndProject
