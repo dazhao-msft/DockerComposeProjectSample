@@ -11,7 +11,7 @@ services:
     volumes:
       - ./WebApplication1:/app
       - ${NUGET_PACKAGES}:/root/.nuget/packages:ro
-      - ${CLRDBG_PATH}:/remote_debugger:ro
+      - ${VSDBG_PATH}:/remote_debugger:ro
     entrypoint: tail -f /dev/null
     labels:
       - "com.microsoft.visualstudio.targetoperatingsystem=linux"
@@ -26,7 +26,7 @@ services:
     volumes:
       - ./WebApplication2:/app
       - ${NUGET_PACKAGES}:/root/.nuget/packages:ro
-      - ${CLRDBG_PATH}:/remote_debugger:ro
+      - ${VSDBG_PATH}:/remote_debugger:ro
     entrypoint: tail -f /dev/null
     labels:
       - "com.microsoft.visualstudio.targetoperatingsystem=linux"
