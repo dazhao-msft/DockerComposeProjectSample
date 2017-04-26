@@ -2,7 +2,7 @@
 <Project ToolsVersion="15.0" Sdk="Microsoft.Docker.Sdk">
   <PropertyGroup Label="Globals">
     <ProjectGuid>850809c2-7ff1-494a-b0b2-bc824b99c54b</ProjectGuid>
-    <ProjectVersion>1.1</ProjectVersion>
+    <ProjectVersion>2.0</ProjectVersion>
     <DockerLaunchBrowser>True</DockerLaunchBrowser>
     <DockerServiceUrl>http://localhost:{ServicePort}</DockerServiceUrl>
     <DockerServiceName>webapplication1</DockerServiceName>
